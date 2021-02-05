@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Form</title>
+
+    <style>
+
+        input[type=text]{
+            width: 100%;
+            padding: 10px 20px;
+            font-size: 1rem;
+            margin: 20px 0px;
+            border: 3px solid salmon;
+            box-sizing: border-box;
+            border-radius: 5px;
+            background-color: seagreen;
+
+        }
+
+        #search{
+            background-image: url("search.png.png");
+            background-repeat: no-repeat;
+            background-position: 8px 15px;
+            font-size: 1rem;
+            padding: 15px 40px;
+            background-color: white;
+            width: 150px;
+            transition: width 0.3s ease-in-out;
+        }
+
+        #search:focus{
+            background-color: tomato;
+            width: 100%;
+        }
+
+        .btn{
+            background-color: yellowgreen;
+            color: white;
+            margin-left: 50%;
+            margin-right: 50%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+        .btn:hover{
+            background-color: violet;
+            box-shadow: rgba(245, 7, 7, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        }
+
+        textarea{
+            resize: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <form action="">
+
+        <label for="search"></label> <input type="text" name="search" id="search" placeholder="search"> <br>
+
+        <label for="fname"> First Name :</label> <input type="text" name="fname" id="fname">
+
+        <label for="lname"> Last Name :</label> <input type="text" name="lname" id="lname"> <br>
+
+        <textarea name="" id="" cols="30" rows="10"> Write Your Comments Here</textarea>
+
+        <button class="btn"> Submit </button>
+
+        
+
+
+        
+
+
+
+    </form>
+    
+</body>
+</html>
